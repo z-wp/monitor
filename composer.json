@@ -1,0 +1,23 @@
+{
+    "name": "ares/monitor",
+    "description": "performance monitoring",
+    "keywords": ["monitor"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "z-wp",
+            "email": "throughdark@163.com",
+            "description": ""
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "google/protobuf": "v3.6.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ares\\Monitor": "src/"
+        }
+    },
+    "version": "1.0.0"
+}
