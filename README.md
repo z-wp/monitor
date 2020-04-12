@@ -1,2 +1,2 @@
 # monitor
-performance monitoring
+This is a PHP performance monitoring extension
