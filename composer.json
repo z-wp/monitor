@@ -1,23 +1,30 @@
 {
     "name": "zwp/monitor",
-    "description": "performance monitoring",
+    "description": "This is a PHP performance monitoring extension",
     "keywords": ["monitor"],
     "license": "MIT",
     "authors": [
         {
             "name": "z-wp",
-            "email": "throughdark@163.com",
-            "description": ""
+            "email": "throughdark@163.com"
         }
     ],
     "require": {
         "php": ">=7.1",
+        "grpc/grpc": "^1.12",
         "google/protobuf": "v3.6.0.1"
     },
     "autoload": {
         "psr-4": {
-            "Zwp\\Monitor": "src/"
-        }
+            "Zwp\\Monitor\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
-    "version": "1.0.0"
+    "autoload-dev": {
+        "psr-4": {
+            "Zwp\\Monitor\\Tests\\": "tests/"
+        }
+    }
 }
